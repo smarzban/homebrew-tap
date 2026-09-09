@@ -1,7 +1,6 @@
 class Tsk < Formula
-  desc "A task board for your terminal"
+  desc "Terminal task board for you and your agents"
   homepage "https://gettsk.sh"
-  version "0.7.0"
   license "MIT"
 
   on_macos do
