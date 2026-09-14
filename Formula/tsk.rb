@@ -6,23 +6,23 @@ class Tsk < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.8.2/tsk-v0.8.2-aarch64-apple-darwin.tar.gz"
-      sha256 "965913463a1726834b2dbe79401f5174a53e2e8b63328e59a11c60b2ef4f712e"
+      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.9.0/tsk-v0.9.0-aarch64-apple-darwin.tar.gz"
+      sha256 "2ecae9c36e0c974ef79d3131d8a6558017e078421f8d03408303ea771a95f1e4"
     end
     on_intel do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.8.2/tsk-v0.8.2-x86_64-apple-darwin.tar.gz"
-      sha256 "b18c6025403828b6bce905dd0c10db4a12a901fa5edb24396c169a75cb338a34"
+      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.9.0/tsk-v0.9.0-x86_64-apple-darwin.tar.gz"
+      sha256 "c2c465e3c4e6f9b3715c5037ec4f3a7c67f73f8e9a36c6282fe2d50eb9645666"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.8.2/tsk-v0.8.2-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "5b70d5a7760673fbb02f77d23c345d5d5cf51dcc74845d2afa277a91691317cf"
+      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.9.0/tsk-v0.9.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "4c93ac83e2fb7b293110ef8779d36d93bbb514050406fca0570b954487d492e2"
     end
     on_intel do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.8.2/tsk-v0.8.2-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e2998269a071e502256a46b81720cbc8dda8f04053bdb77e4753e91bfc659960"
+      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.9.0/tsk-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "00835d542082aea66899463ebfb5426b90e92110054fcb846ed66f342002f044"
     end
   end
 
@@ -34,6 +34,8 @@ class Tsk < Formula
     <<~EOS
       Homebrew installs are noninteractive. To register the shared tsk binary and shortcuts in Herdr, run:
         tsk setup herdr
+      To add the tsk skill to your coding agents, run:
+        tsk setup agents
     EOS
   end
 
