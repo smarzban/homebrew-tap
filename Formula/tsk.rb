@@ -6,23 +6,23 @@ class Tsk < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.9.0/tsk-v0.9.0-aarch64-apple-darwin.tar.gz"
-      sha256 "2ecae9c36e0c974ef79d3131d8a6558017e078421f8d03408303ea771a95f1e4"
+      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.10.0/tsk-v0.10.0-aarch64-apple-darwin.tar.gz"
+      sha256 "c0fef12fa3d7ab365e88dc38439413f236b61ec4b8de59e051180eb6abab07a0"
     end
     on_intel do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.9.0/tsk-v0.9.0-x86_64-apple-darwin.tar.gz"
-      sha256 "c2c465e3c4e6f9b3715c5037ec4f3a7c67f73f8e9a36c6282fe2d50eb9645666"
+      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.10.0/tsk-v0.10.0-x86_64-apple-darwin.tar.gz"
+      sha256 "1f524bbb6c6ad0236c6b4e9d49802a4140bc2129f5ea7c8459ec06ceb4650fd5"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.9.0/tsk-v0.9.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4c93ac83e2fb7b293110ef8779d36d93bbb514050406fca0570b954487d492e2"
+      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.10.0/tsk-v0.10.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "5bdf65ee195744da6c560b57ba322d731552026354fa051744cbd224ba4dff91"
     end
     on_intel do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.9.0/tsk-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "00835d542082aea66899463ebfb5426b90e92110054fcb846ed66f342002f044"
+      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.10.0/tsk-v0.10.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "aa6f52db3379b34e29f5ea2628476abd1171c6203e4ced2398a6ee390b52dd9b"
     end
   end
 
