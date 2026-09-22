@@ -6,23 +6,23 @@ class Tsk < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.10.1/tsk-v0.10.1-aarch64-apple-darwin.tar.gz"
-      sha256 "2f97604bcf2a281dfa66c0ebf96ca51e739016f5753a7d4d73ff17d897e12739"
+      url "https://github.com/smarzban/tsk/releases/download/v0.11.6/tsk-v0.11.6-aarch64-apple-darwin.tar.gz"
+      sha256 "af1bdca059d1bbb0fd95c1a821f4289d86f50207b0729a8a396c6ca79ffebadc"
     end
     on_intel do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.10.1/tsk-v0.10.1-x86_64-apple-darwin.tar.gz"
-      sha256 "6dc324b4de860b672e179c54fb4050c5cc670b8cdf06a8f8bf4ea95f61c7b023"
+      url "https://github.com/smarzban/tsk/releases/download/v0.11.6/tsk-v0.11.6-x86_64-apple-darwin.tar.gz"
+      sha256 "07832a5411730d6e58bbebc06f3fcbe6972eef38ac348ffb6c134b497cf3261c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.10.1/tsk-v0.10.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "b0b7ea8def3aa537b476c5570954331bbd18fdffe8ce71fa56e22f22b6ce308f"
+      url "https://github.com/smarzban/tsk/releases/download/v0.11.6/tsk-v0.11.6-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "cdc1403acb292968afeda47ee856ccfc4150ac67e71a982fb3fd4a33e0b08c97"
     end
     on_intel do
-      url "https://github.com/smarzban/herdr-tsk/releases/download/v0.10.1/tsk-v0.10.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "81dc8d8b3f2c9ec032136243df4b56cc47cf74752ba3b845a45131af8265f136"
+      url "https://github.com/smarzban/tsk/releases/download/v0.11.6/tsk-v0.11.6-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "9da06f5e864c71339007a4d414569ee9147fbd05c8b8b116e2cbe2d0f2f645c4"
     end
   end
 
@@ -41,7 +41,6 @@ class Tsk < Formula
 
   test do
     ENV["TSK_STATE_DIR"] = (testpath/"state").to_s
-    ENV["TSK_CONFIG_DIR"] = (testpath/"config").to_s
     assert_match "usage: tsk", shell_output("#{bin}/tsk --help")
     system bin/"tsk", "add", "--desk", "-t", "Homebrew smoke"
     assert_match "Homebrew smoke", shell_output("#{bin}/tsk list --desk")
